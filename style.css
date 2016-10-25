@@ -1,0 +1,165 @@
+
+@font-face {
+    font-family: 'whateverItTakes';
+    src: url('whatever_it_takes.ttf');
+}
+
+.menu{
+  display: block;
+  vertical-align: top;
+  box-sizing: border-box;
+  margin: none;
+  float: left;
+  width: 31.3333%;
+  margin: 1%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.wpis{
+	background-image: url("images/blackboard.jpg");
+	background-size: 150%;
+	height: 240px;
+  box-sizing: border-box;
+  float: left;
+  /*border: solid 5.5px #99cc00	;*/
+	color: #e6b800;
+	text-align: center;
+	font-family: 'whateverItTakes', sans-serif;
+  width: 31.3333%;
+  margin: 1%;
+  padding: 0px;
+}
+
+.wpis h1{
+  padding: 0px;
+}
+
+.wpis h2{
+  vertical-align: text-bottom;
+}
+
+.wpis p{
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.extrass h6{
+  font-size: 22px;
+  line-height: 17px;
+  padding: 0px;
+}
+
+.extrass p{
+  font-size: 20px;
+  line-height: 17px;
+  padding: 0px;
+}
+
+.wrapper{
+  max-width: 1000px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.clearfix::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+body{
+  margin: 0;
+  background-image: url("images/background.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+article p,q{
+	margin: 3%;
+}
+
+article{
+	margin: auto auto 15% auto;
+}
+
+h6{
+  margin: 0px;
+}
+/*
+img{
+  height: auto;
+  width: 100%;
+  margin: auto;
+  display: none;
+}
+*/
+.content{
+  text-align: center;
+  padding-top: 50px;
+  margin: auto 5% auto 5%;
+}
+
+.line {
+  border-top: solid 1px #000000;
+  margin: 50px 5% 0px 5%;
+}
+/*
+.slider {
+  width: 100%;
+  height: auto;
+  max-height: 750px;
+}*/
+
+@media screen and (max-width: 970px) {
+  .wpis{
+    width: 48%;
+    margin: 1%;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .wpis{
+    width: 98%;
+    margin: 1%;
+    padding: 0px;
+  }
+}
+
+div#slider { overflow: hidden; }
+div#slider figure img { width: 25%; float: left; }
+div#slider figure {
+  position: relative;
+  width: 400%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slidy infinite;
+}
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  27% {
+    left: 0%;
+  }
+  34% {
+    left: -100%;
+  }
+  61% {
+    left: -100%;
+  }
+  68% {
+    left: -200%;
+  }
+  95% {
+    left: -200%;
+  }
+  100% {
+    left: -300%;
+  }
+}
